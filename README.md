@@ -45,7 +45,7 @@ EOF
 
 ``` apt-get install -y docker.io ```
 
-### Step 3 : Install kubeadm, Kubelet And Kubectl on Master.
+### Step 3 : Install kubeadm, Kubelet And Kubectl .
 
 
 kubeadm: the command to bootstrap the cluster.
@@ -74,7 +74,7 @@ apt-mark hold kubelet kubeadm kubectl
 ```
 
 
-### Step 4 : Let’s start Kubernetes cluster from the Master node. Before running the required command, note the private ip address of the master virtual machine.
+### Step 4 : Let’s start Kubernetes cluster . Before running the required command, note the private ip address of the master virtual machine.
 
 ``` kubeadm init --apiserver-advertise-address=<internal-ip-address-of-master-node> --pod-network-cidr=192.168.0.0/16  ```
 
